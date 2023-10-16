@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-mfjg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/rsoaresd_org/spi-demos-yuxo-tenant/dotnet-component/devfile-sample-dotnet60-basic-mfjg@sha256:6f2b492011d53f1cebc77a3580bd8dffbfd3e3027386184af97c3b24760c4f82
+        name: main
+        resources: {}
+status: {}
